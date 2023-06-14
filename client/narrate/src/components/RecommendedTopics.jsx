@@ -13,7 +13,7 @@ export default function RecommendedTopics({ selectedCategory }) {
   const [topics, setTopics] = useState({});
 
   const fetchTopics = (selectedCategory) => {
-    fetch(`http://localhost:5000/api/topics?category=${selectedCategory}`)
+    fetch(`https://node-blog-api-61eb.onrender.com/api/topics?category=${selectedCategory}`)
       .then((response) => response.json())
       .then((data) => {
         const formattedTopics = {};
@@ -36,7 +36,7 @@ export default function RecommendedTopics({ selectedCategory }) {
 
   const handleDelete = (topicId) => {
     console.log(topicId);
-    fetch(`http://localhost:5000/api/topic/${topicId}`, {
+    fetch(`https://node-blog-api-61eb.onrender.com/api/topic/${topicId}`, {
       method: "DELETE",
     })
       .then((response) => {

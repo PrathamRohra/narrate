@@ -13,7 +13,7 @@ export default function BlogContent() {
   const navigate = useNavigate();
   const fetchBlogs = () => {
     // console.log(`/api/blog/${id}`)
-    fetch(`http://localhost:5000/api/blog/${id}`)
+    fetch(`https://node-blog-api-61eb.onrender.com/api/blog/${id}`)
       .then((response) => {
         // console.log(response);
         if (!response.ok) {

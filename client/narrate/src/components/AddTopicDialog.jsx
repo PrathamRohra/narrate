@@ -10,7 +10,7 @@ const AddTopicDialog = ({ selectedCategory }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const apiUrl = 'http://localhost:5000/api/topic'; 
+    const apiUrl = 'https://node-blog-api-61eb.onrender.com/api/topic'; 
     const topicData = {
       // selectedCategory: selectedCategory,
       selectedCategory: "Custom",

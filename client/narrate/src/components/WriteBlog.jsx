@@ -10,7 +10,7 @@ const WriteBlog = ({ topic, tags, topicId }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const apiUrl = 'http://localhost:5000/api/blog'; 
+    const apiUrl = 'https://node-blog-api-61eb.onrender.com/api/blog'; 
     const blogData = {
       title: topic,
       tags: tags,
